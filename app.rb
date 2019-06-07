@@ -12,7 +12,8 @@ module FormsLab
       erb :new
     end
 
-    post "/new" do
+    post "/pirates" do
+      @hash = params
 
       erb :show
     end
