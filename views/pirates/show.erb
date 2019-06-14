@@ -1,14 +1,14 @@
 <h1>Display your Pirate here</h1>
-<p>Pirate Name: <%= @hash[pirate][name] %></p>
-<p>Weight: <%= @hash[pirate][weight] %></p>
-<p>Height: <%= @hash[pirate][height] %></p>
+<p>Pirate Name: <%= @hash[:pirate][:name] %></p>
+<p>Weight: <%= @hash[:pirate][:weight] %></p>
+<p>Height: <%= @hash[:pirate][:height] %></p>
 
 <h2>Display your first ship here</h2>
-<p>Ship #1 Name: <%= @hash[pirate][ship][0][name] %></p>
-<p>Type: <%= @hash[pirate][ship][0][type] %></p>
-<p>Booty: <%= @hash[pirate][ship][0][booty] %></p>
+<p>Ship #1 Name: <%= @hash[:pirate][:ships][0][:name] %></p>
+<p>Type: <%= @hash[:pirate][:ships][0][:type] %></p>
+<p>Booty: <%= @hash[:pirate][:ships][0][:booty] %></p>
 
 <h2>Display your second ship here</h2>
-<p>Ship #2 Name: <%= @hash[pirate][ship][0][name] %></p>
-<p>Type: <%= @hash[pirate][ship][0][type] %></p>
-<p>Booty: <%= @hash[pirate][ship][0][booty] %></p>
+<p>Ship #2 Name: <%= @hash[:pirate][:ships][1][:name] %></p>
+<p>Type: <%= @hash[:pirate][:ships][1][:type] %></p>
+<p>Booty: <%= @hash[:pirate][:ships][1][:booty] %></p>
